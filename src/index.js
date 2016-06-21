@@ -10,17 +10,17 @@ import App from './components/App';
 import Callback from './components/Callback';
 import Stream from './components/Stream';
 
-const tracks = [
-  {
-    title: 'Some track'
-  },
-  {
-    title: 'Some other track'
-  }
-];
+// const tracks = [
+//   {
+//     title: 'Some track'
+//   },
+//   {
+//     title: 'Some other track'
+//   }
+// ];
 
 const store = configureStore();
-store.dispatch(actions.setTracks(tracks));
+// store.dispatch(actions.setTracks(tracks));
 
 const history = syncHistoryWithStore(browserHistory, store);
 

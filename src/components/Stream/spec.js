@@ -5,10 +5,14 @@ describe('Stream', () => {
   const props = {
     tracks: [
       {
-        title: 'x'
+        origin: {
+          title: 'x'
+        }
       },
       {
-        title: 'y'
+        origin: {
+          title: 'y'
+        }
       }
     ]
   };
