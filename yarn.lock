@@ -2629,7 +2629,7 @@ react-hot-loader:
     react-hot-api "^0.4.5"
     source-map "^0.4.4"
 
-react-redux@^4.4.5:
+react-redux:
   version "4.4.6"
   resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-4.4.6.tgz#4b9d32985307a11096a2dd61561980044fcc6209"
   dependencies:
@@ -2703,7 +2703,7 @@ redux:
     loose-envify "^1.1.0"
     symbol-observable "^1.0.2"
 
-redux-logger@^2.6.1:
+redux-logger:
   version "2.7.4"
   resolved "https://registry.yarnpkg.com/redux-logger/-/redux-logger-2.7.4.tgz#891e5d29e7f111d08b5781a237b9965b5858c7f8"
   dependencies:
