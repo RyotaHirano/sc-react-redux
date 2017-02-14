@@ -1,7 +1,8 @@
 {
   "name": "soundcloud-react-redux-tutorial",
   "scripts": {
-    "start": "webpack-dev-server --progress --colors --hot"
+    "start": "webpack-dev-server --progress --colors --hot",
+    "test": "mocha --compilers js:babel-core/register --require ./test/setup.js 'src/**/*spec.js'"
   },
   "engines": {
     "node": ">=6.0.0"
