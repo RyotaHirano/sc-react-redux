@@ -1,26 +1,32 @@
-import React from 'react';
-import ReactDom from 'react-dom';
-import { Provider } from 'react-redux';
-import configureStore from '../stores/configureStore';
-import * as actions from '../actions';
-import Stream from '../components/Stream';
+import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
+import Stream from './components/Stream';
+
+const title = 'My SoundCloud React Redux App';
 
 const tracks = [
   {
-    title: 'Some track'
+    title: 'some track1'
   },
   {
-    title: 'Some other track'
+    title: 'some track2'
   }
-];
+]
 
-const store = configureStore();
-store.dispatch(actions.setTracks(tracks));
+export default class App extends Component {
+  constructor() {
+    super();
+  }
 
-ReactDom.render(
-  <Provider store={store}>
-    <Stream />
-  </Provider>
-  ,
-  document.getElementById('app')
-);
+  render() {
+    return (
+      <div>
+        {title}
+        <Stream tracks={tracks}/>
+      </div>
+    )
+  }
+}
+
+
+ReactDOM.render(<App></App>, document.getElementById('app'));
