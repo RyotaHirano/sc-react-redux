@@ -5,4 +5,4 @@ export function setTracks(tracks) {
     type: actionTypes.TRACK_SET,
     tracks
   };
-};
+}
