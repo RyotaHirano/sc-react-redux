@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import configreStore from './store/configureStore';
+import configureStore from './store/configureStore';
 import * as actions from './actions';
 import Stream from './components/Stream';
 
@@ -15,7 +15,7 @@ const tracks = [
   }
 ];
 
-const store = configreStore();
+const store = configureStore();
 store.dispatch(actions.setTracks(tracks));
 
 export default class App extends Component {
