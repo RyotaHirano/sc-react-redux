@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import configreStore from './store/configureStore';
+import * as actions from './actions';
 import Stream from './components/Stream';
 
 const title = 'My SoundCloud React Redux App';
@@ -11,7 +13,10 @@ const tracks = [
   {
     title: 'some track2'
   }
-]
+];
+
+const store = configreStore();
+store.dispatch(actions.setStore(tracks));
 
 export default class App extends Component {
   constructor() {
@@ -27,6 +32,5 @@ export default class App extends Component {
     )
   }
 }
-
 
 ReactDOM.render(<App></App>, document.getElementById('app'));
