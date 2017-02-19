@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import configureStore from './stores/configureStore';
 import * as actions from './actions';
 import Stream from './components/Stream';
@@ -25,10 +26,9 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
-        {title}
-        <Stream tracks={tracks}/>
-      </div>
+      <Provider store={store}>
+        <Stream />
+      </Provider>
     )
   }
 }

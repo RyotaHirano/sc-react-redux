@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
 
-export default function Steam({tracks = []}) {
+function Stream({tracks = []}) {
   return (
     <div>
       {
@@ -11,3 +12,12 @@ export default function Steam({tracks = []}) {
     </div>
   )
 }
+
+function mapStateToProps(state) {
+  const tracks = state.track;
+  return {
+    tracks
+  };
+}
+
+export default connect(mapStateToProps)(Stream);
