@@ -16,7 +16,7 @@ const tracks = [
 ];
 
 const store = configreStore();
-store.dispatch(actions.setStore(tracks));
+store.dispatch(actions.setTracks(tracks));
 
 export default class App extends Component {
   constructor() {
