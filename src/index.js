@@ -2,7 +2,7 @@ import SC from 'soundcloud';
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
-import { syncHistoryWithStore } from 'react-redux-router';
+import { syncHistoryWithStore } from 'react-router-redux';
 import { Provider } from 'react-redux';
 import configureStore from './stores/configureStore';
 import * as actions from './actions';
