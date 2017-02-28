@@ -1,4 +1,4 @@
-var webpack = requier('webpack');
+var webpack = require('webpack');
 
 module.exports = {
   entry: [
@@ -29,7 +29,7 @@ module.exports = {
     historyApiFallback: true
   },
   plugins: [
-    new webpack.ProviderPlugin({
+    new webpack.ProvidePlugin({
       'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
     })
   ]

@@ -29,7 +29,7 @@ store.dispatch(actions.setTracks(tracks));
 
 const history = syncHistoryWithStore(browserHistory, store);
 
-export default class App extends Component {
+export default class Main extends Component {
   constructor() {
     super();
   }
@@ -39,9 +39,9 @@ export default class App extends Component {
       <Provider store={store}>
         <Router history={history}>
           <Route path="/" component={App}>
-            <IndexRoute component={Stream}/>
-            <Route path="/" component={Stream}/>
-            <Route path="/callback" component={Callback}></Route>
+            <IndexRoute component={Stream} />
+            <Route path="/" component={Stream} />
+            <Route path="/callback" component={Callback} />
           </Route>
         </Router>
       </Provider>
