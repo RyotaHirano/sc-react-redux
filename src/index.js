@@ -13,20 +13,7 @@ import { CLIENT_ID, REDIRECT_URI } from './constants/auth';
 
 SC.initialize({ client_id: CLIENT_ID, redirect_uri: REDIRECT_URI });
 
-const title = 'My SoundCloud React Redux App';
-
-const tracks = [
-  {
-    title: 'some track1'
-  },
-  {
-    title: 'some track2'
-  }
-];
-
 const store = configureStore();
-store.dispatch(actions.setTracks(tracks));
-
 const history = syncHistoryWithStore(browserHistory, store);
 
 export default class Main extends Component {
@@ -49,4 +36,4 @@ export default class Main extends Component {
   }
 }
 
-ReactDOM.render(<App></App>, document.getElementById('app'));
+ReactDOM.render(<Main></Main>, document.getElementById('app'));
